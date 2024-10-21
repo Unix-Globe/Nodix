@@ -1,5 +1,5 @@
 {
-  "name": "miniunix",
+  "name": "nodix",
   "module": "kernel/shell.ts",
   "vesion": "0.0.1",
   "type": "module",
