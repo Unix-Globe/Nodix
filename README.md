@@ -1,4 +1,4 @@
-# miniunix
+# Nodix
 
 To install dependencies:
 
@@ -9,7 +9,7 @@ bun install
 To run:
 
 ```bash
-bun run kernel/system.ts
+bun run test
 ```
 
 This project was created using `bun init` in bun v1.1.30. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
