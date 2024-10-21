@@ -1,0 +1,30 @@
+{
+  "name": "miniunix",
+  "module": "kernel/shell.ts",
+  "vesion": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "test": "bun ./kernel/shell.ts",
+    "build:node": "tsc --build ./build",
+    "build:bundle": "bun build ./kernel/shell.ts ./kernel/system.ts ./kernel/system/commands/cd.ts ./kernel/system/commands/ls.ts ./kernel/system/commands/echo.ts ./data/users.json --outdir ./build/Nodix.js",
+    "build:dist": "zip -r NodixSystem1.zip ./build/Nodix.js/"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "node-progress": "^0.1.0",
+    "ora": "^8.1.0",
+    "pkg": "^5.8.1",
+    "prompt-sync": "^4.2.0",
+    "shelljs": "^0.8.5",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "yargs": "^17.7.2"
+  }
+}
